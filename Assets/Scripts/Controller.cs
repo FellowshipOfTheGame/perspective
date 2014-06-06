@@ -1,44 +1,88 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Controller : MonoBehaviour {
+[RequireComponent(typeof(CapsuleCollider))]
+public class Controller : MonoBehaviour
+{
+    public void Awake()
+    {
+        _groundRay = new Ray { direction = Vector3.down };
+    }
 
-    /// <summary>
-    /// The speed.
-    /// </summary>
-	public float speed = 50f;
+    public void FixedUpdate()
+    {
+        Vector2 inputAxes = new Vector2(
+            x: Input.GetAxisRaw("Horizontal"),
+            y: Input.GetAxisRaw("Vertical"));
 
-    public float jumpSpeed = 4f;
+        #region Ground Check
 
-    /// <summary>
-    /// The player is touching the ground.
-    /// </summary>
-    private bool isGrounded = false;
+        _groundRay.origin = transform.position + Vector3.down * (collider.bounds.extents.y - .5f * GroundRaySize);
+        _isGrounded = Physics.Raycast(_groundRay, GroundRaySize);
 
-	public void FixedUpdate()
-	{
-        float inputHorizontal = Input.GetAxisRaw("Horizontal");
+        #endregion Ground Check
 
-        rigidbody.AddForce(Vector3.right *  inputHorizontal * (speed * Time.deltaTime), ForceMode.VelocityChange);
+        #region Kinematics
 
-        //Dat LULZ rotation
-        Quaternion rotation = Quaternion.Euler(new Vector3(rigidbody.rotation.x, rigidbody.rotation.y, -inputHorizontal * 5f));
-        rigidbody.rotation = rotation;
-
-        if (isGrounded)
+        float horizontalVelocity = rigidbody.velocity.x + (inputAxes.x * Acceleration);
+        horizontalVelocity = Mathf.Clamp(horizontalVelocity, -MaximumSpeed, +MaximumSpeed);
+        rigidbody.velocity = new Vector3(horizontalVelocity, rigidbody.velocity.y, rigidbody.velocity.z);
+        
+        if (_isGrounded)
         {
-            if(Input.GetAxisRaw("Vertical") == 1f)
+            if (inputAxes.y > 0f)
             {
-                rigidbody.AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
+                rigidbody.AddForce(Vector3.up * JumpImpulse, ForceMode.Impulse);
             }
         }
 
-        isGrounded = false;
-	}
+        #endregion Kinematics
 
-    public void OnCollisionStay(Collision collision)
-    {
-        isGrounded = true;
+        #region Animation
+        if (_isGrounded)
+        {
+            animation.CrossFade(Mathf.Abs(inputAxes.x) > 0f ? "run" : "idle");
+        }
+        //else
+        //{
+        //    //Jump
+        //}
+
+        if (inputAxes.x > 0)
+        {
+            transform.rotation = _facingRightRotation;
+        }
+        else if (inputAxes.x < 0)
+        {
+            transform.rotation = _facingLeftRotation;
+        }
+        #endregion Animation
     }
+
+    void OnDrawGizmos()
+    {
+        //GroundCheck
+        Gizmos.DrawRay(_groundRay.origin, Vector3.down * GroundRaySize);
+
+        //Velocity
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, rigidbody.velocity/MaximumSpeed);
+    }
+
+    #region Ground Check
+    private Ray _groundRay;
+    private bool _isGrounded;
+    private const float GroundRaySize = .05f;
+    #endregion GroundCheck
+
+    #region Kinematics
+    public float Acceleration = 5f;
+    public float MaximumSpeed = 20f;
+    public float JumpImpulse = 10f;
+    #endregion Kinematics
+
+    #region Constants
+    private readonly Quaternion _facingRightRotation = Quaternion.Euler(0, 90, 0);
+    private readonly Quaternion _facingLeftRotation = Quaternion.Euler(0, 270, 0);
+    #endregion Constants
 }

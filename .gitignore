@@ -12,6 +12,11 @@ sysinfo.txt
 
 *.sln
 *.csproj
+
+#################
+## UnityVS/Reshaper
+#################
+*UnityVS*
  
 #################
 ## MonoDevelop
