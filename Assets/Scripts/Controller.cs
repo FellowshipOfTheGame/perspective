@@ -1,88 +1,54 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(CapsuleCollider))]
 public class Controller : MonoBehaviour
 {
-    public void Awake()
-    {
-        _groundRay = new Ray { direction = Vector3.down };
-    }
+    public float AccelerationOnGround = 100f;
+    public float MaxVelocityOnGround = 50f;
+
+    public float JumpHeight = 2.01f;
+    public float AccelerationOnAir = 15f;
+    //public float MaxVelocityOnAir = 10f;
+
+    private bool _isGrounded;
+    
 
     public void FixedUpdate()
     {
-        Vector2 inputAxes = new Vector2(
-            x: Input.GetAxisRaw("Horizontal"),
-            y: Input.GetAxisRaw("Vertical"));
+        _isGrounded = Physics.Raycast(transform.position, Vector3.down, collider.bounds.extents.y);
 
-        #region Ground Check
-
-        _groundRay.origin = transform.position + Vector3.down * (collider.bounds.extents.y - .5f * GroundRaySize);
-        _isGrounded = Physics.Raycast(_groundRay, GroundRaySize);
-
-        #endregion Ground Check
-
-        #region Kinematics
-
-        float horizontalVelocity = rigidbody.velocity.x + (inputAxes.x * Acceleration);
-        horizontalVelocity = Mathf.Clamp(horizontalVelocity, -MaximumSpeed, +MaximumSpeed);
-        rigidbody.velocity = new Vector3(horizontalVelocity, rigidbody.velocity.y, rigidbody.velocity.z);
-        
+        float acceleration;
+        float maxVelocity;
+        Vector3 velocity = rigidbody.velocity;
         if (_isGrounded)
         {
-            if (inputAxes.y > 0f)
+            acceleration = AccelerationOnGround;
+            maxVelocity = MaxVelocityOnGround;
+
+            if (Input.GetButton("Jump"))
             {
-                rigidbody.AddForce(Vector3.up * JumpImpulse, ForceMode.Impulse);
+                velocity.y = Mathf.Sqrt(-2f * Physics.gravity.y * JumpHeight);
             }
         }
-
-        #endregion Kinematics
-
-        #region Animation
-        if (_isGrounded)
+        else
         {
-            animation.CrossFade(Mathf.Abs(inputAxes.x) > 0f ? "run" : "idle");
+            acceleration = AccelerationOnAir;
+            maxVelocity = Mathf.Infinity;
         }
-        //else
-        //{
-        //    //Jump
-        //}
 
-        if (inputAxes.x > 0)
+        float horizontalInput = Input.GetAxis("Horizontal");
+
+        bool pathBlocked = Physics.Raycast(
+            origin: transform.position, 
+            direction: Mathf.Sign(horizontalInput)*Vector3.right,
+            distance: collider.bounds.extents.x);
+        
+        if (!pathBlocked)
         {
-            transform.rotation = _facingRightRotation;
+            rigidbody.AddForce(horizontalInput*acceleration*Vector3.right);
+            velocity.x = Mathf.Clamp(velocity.x, -maxVelocity, maxVelocity);
         }
-        else if (inputAxes.x < 0)
-        {
-            transform.rotation = _facingLeftRotation;
-        }
-        #endregion Animation
+
+        rigidbody.velocity = velocity;
     }
-
-    void OnDrawGizmos()
-    {
-        //GroundCheck
-        Gizmos.DrawRay(_groundRay.origin, Vector3.down * GroundRaySize);
-
-        //Velocity
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, rigidbody.velocity/MaximumSpeed);
-    }
-
-    #region Ground Check
-    private Ray _groundRay;
-    private bool _isGrounded;
-    private const float GroundRaySize = .05f;
-    #endregion GroundCheck
-
-    #region Kinematics
-    public float Acceleration = 5f;
-    public float MaximumSpeed = 20f;
-    public float JumpImpulse = 10f;
-    #endregion Kinematics
-
-    #region Constants
-    private readonly Quaternion _facingRightRotation = Quaternion.Euler(0, 90, 0);
-    private readonly Quaternion _facingLeftRotation = Quaternion.Euler(0, 270, 0);
-    #endregion Constants
+    
 }
