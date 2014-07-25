@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Controller : MonoBehaviour
+public class MotionController : MonoBehaviour
 {
     public float AccelerationOnGround = 100f;
     public float MaxHorizontalVelocity = 50f;
