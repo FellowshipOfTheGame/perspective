@@ -27,7 +27,6 @@ public class Layer : MonoBehaviour
             {
                 OnLayerEnabled();
             }
-            
         }
         else
         {

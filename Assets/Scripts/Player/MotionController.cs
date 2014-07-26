@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Collider))]
 public class MotionController : MonoBehaviour
 {
     public float AccelerationOnGround = 100f;
@@ -13,7 +15,7 @@ public class MotionController : MonoBehaviour
 
     public void FixedUpdate()
     {
-        _isGrounded = Physics.Raycast(transform.position, Vector3.down, collider.bounds.extents.y);
+        _isGrounded = Physics.Raycast(transform.position, Vector3.down, collider.bounds.extents.y+.1f);
 
         float acceleration = _isGrounded ? AccelerationOnGround : AccelerationOnAir;
 

@@ -1,25 +1,24 @@
 ﻿using UnityEngine;
 
-public class ChangeMaterialForLayer : LayerObject
+public class Ghost : LayerEventHandler
 {
     public Material MaterialWhenEnabled;
     public Material MaterialWhenDisabled;
 
-    public void Start()
-    {
-        RegisterLayerEnabledListener();
-        RegisterLayerDisabledListener();
-    }
-
     protected override void OnLayerEnabled()
     {
-        base.OnLayerEnabled();
         gameObject.renderer.material = MaterialWhenEnabled;
+        gameObject.collider.enabled = true;
     }
 
     protected override void OnLayerDisabled()
     {
-        base.OnLayerDisabled();
         gameObject.renderer.material = MaterialWhenDisabled;
+        gameObject.collider.enabled = false;
+    }
+
+    protected override Color EditorTint
+    {
+        get { return new Color(.5f, .5f, 1f, .5f); }
     }
 }

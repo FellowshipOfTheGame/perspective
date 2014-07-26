@@ -12,9 +12,8 @@ GameObject:
   - 23: {fileID: 2300000}
   - 65: {fileID: 6500000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
   m_Layer: 0
-  m_Name: ghost
+  m_Name: Ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +43,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 8eb8fe8e11c438b45b1dacc26ece5315, type: 2}
+  - {fileID: 2100000, guid: 4b86a4dbd1f394f4dbe4e68cb3cc8cac, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -79,23 +78,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5ff00df624606a408c4f5f4cc4f484b, type: 3}
+  m_Script: {fileID: 11500000, guid: eae66fd60af6a0346b83c19bb204317f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaterialWhenEnabled: {fileID: 2100000, guid: 3290eccf2a50862459a06221ab5fec95, type: 2}
   MaterialWhenDisabled: {fileID: 2100000, guid: 4b86a4dbd1f394f4dbe4e68cb3cc8cac,
     type: 2}
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6fa22972edb89248aece3e78c77bda4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
