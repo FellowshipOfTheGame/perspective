@@ -2,7 +2,8 @@
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Collider))]
-public class MotionController : MonoBehaviour
+[RequireComponent(typeof(Animator))]
+public class CharacterMotor : MonoBehaviour
 {
     public float AccelerationOnGround = 100f;
     public float MaxHorizontalVelocity = 50f;
@@ -13,9 +14,16 @@ public class MotionController : MonoBehaviour
     private bool _isGrounded;
     public float TurningSpeed = 3;
 
+    private Animator _animator;
+
+    public void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
     public void FixedUpdate()
     {
-        _isGrounded = Physics.Raycast(transform.position, Vector3.down, collider.bounds.extents.y+.1f);
+        _isGrounded = Physics.Raycast(transform.position, Vector3.down, collider.bounds.extents.y + .01f);
 
         float acceleration = _isGrounded ? AccelerationOnGround : AccelerationOnAir;
 
@@ -56,5 +64,8 @@ public class MotionController : MonoBehaviour
 
         euler.y = Mathf.Clamp(euler.y, 0f, 180f);
         transform.rotation = Quaternion.Euler(euler);
+
+        _animator.SetFloat("speed", Mathf.Abs(velocity.x));
+        _animator.SetBool("grounded", _isGrounded);
     }
 }
