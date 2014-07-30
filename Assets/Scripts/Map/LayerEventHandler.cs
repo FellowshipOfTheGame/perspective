@@ -11,14 +11,24 @@ public abstract class LayerEventHandler : MonoBehaviour
 #if UNITY_EDITOR
         if (!Application.isPlaying)
         {
-            Material material = new Material(gameObject.renderer.sharedMaterial)
+            Material editorMaterial = new Material(gameObject.renderer.sharedMaterial)
             {
                 color = EditorTint
             };
-            gameObject.renderer.sharedMaterial = material;
+            gameObject.renderer.sharedMaterial = editorMaterial;
         }
 #endif
     }
+
+#if UNITY_EDITOR
+    public void OnDestroy()
+    {
+        if (!Application.isPlaying)
+        {
+            DestroyImmediate(renderer.sharedMaterial, true);
+        }
+    }
+#endif
 
     protected abstract void OnLayerEnabled();
     protected abstract void OnLayerDisabled();

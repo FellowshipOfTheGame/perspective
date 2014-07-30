@@ -673,7 +673,7 @@ GameObject:
   - 65: {fileID: 19829395}
   - 114: {fileID: 19829394}
   m_Layer: 0
-  m_Name: Ghost
+  m_Name: ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -732,7 +732,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 400971439}
+  - {fileID: 1305010941}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -928,6 +928,32 @@ Prefab:
   m_RootGameObject: {fileID: 2009745636}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!21 &25894122
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ghost material
+  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 0e0df75813dc39445b1a56320d86acf1, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .5, g: .5, b: 1, a: .5}
 --- !u!1 &26374749
 GameObject:
   m_ObjectHideFlags: 0
@@ -5328,6 +5354,32 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1098471013}
   m_GameObject: {fileID: 176119064}
   m_Mesh: {fileID: 4300030, guid: 5be880e719b89ea4e86f6523cf2c3ee4, type: 3}
+--- !u!21 &179081866
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ghost material
+  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 0e0df75813dc39445b1a56320d86acf1, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .5, g: .5, b: 1, a: .5}
 --- !u!1 &179563915
 GameObject:
   m_ObjectHideFlags: 0
@@ -12012,32 +12064,6 @@ Prefab:
   m_RootGameObject: {fileID: 2116342874}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!21 &400971439
-Material:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ghost material
-  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: []
-  m_CustomRenderQueue: -1
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 0e0df75813dc39445b1a56320d86acf1, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats: {}
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: .5, g: .5, b: 1, a: .5}
 --- !u!1001 &401967608
 Prefab:
   m_ObjectHideFlags: 0
@@ -13254,32 +13280,6 @@ Prefab:
   m_RootGameObject: {fileID: 487752440}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!21 &433916320
-Material:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ghost material
-  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: []
-  m_CustomRenderQueue: -1
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 0e0df75813dc39445b1a56320d86acf1, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats: {}
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: .5, g: .5, b: 1, a: .5}
 --- !u!1001 &435627300
 Prefab:
   m_ObjectHideFlags: 0
@@ -14864,7 +14864,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 764fd1a082c426d45a0049bcc5e9b4e3, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1231946399}
+      objectReference: {fileID: 179081866}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 764fd1a082c426d45a0049bcc5e9b4e3, type: 2}
   m_RootGameObject: {fileID: 1117369322}
@@ -26178,7 +26178,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 764fd1a082c426d45a0049bcc5e9b4e3, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 400971439}
+      objectReference: {fileID: 1305010941}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 764fd1a082c426d45a0049bcc5e9b4e3, type: 2}
   m_RootGameObject: {fileID: 19829392}
@@ -26827,7 +26827,7 @@ GameObject:
   - 65: {fileID: 644859911}
   - 114: {fileID: 644859910}
   m_Layer: 0
-  m_Name: Ghost
+  m_Name: ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26886,7 +26886,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 858552819}
+  - {fileID: 1679339502}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -29185,7 +29185,7 @@ GameObject:
   - 65: {fileID: 722018235}
   - 114: {fileID: 722018234}
   m_Layer: 0
-  m_Name: Ghost
+  m_Name: ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29244,7 +29244,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 433916320}
+  - {fileID: 728382446}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -29468,6 +29468,32 @@ Prefab:
   m_RootGameObject: {fileID: 815627693}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!21 &728382446
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ghost material
+  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 0e0df75813dc39445b1a56320d86acf1, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .5, g: .5, b: 1, a: .5}
 --- !u!1 &728586797
 GameObject:
   m_ObjectHideFlags: 0
@@ -29760,6 +29786,7 @@ MonoBehaviour:
   MaxHorizontalVelocity: 10
   JumpHeight: 3
   AccelerationOnAir: 20
+  GroundDistance: .100000001
   TurningSpeed: 3.0999999
 --- !u!114 &734259536
 MonoBehaviour:
@@ -35242,840 +35269,840 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 420573826}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1737289742}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1068985440}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 350941179}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2007340296}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1901931707}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2066758155}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 161859953}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 760380481}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 652913822}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 550090786}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 531179780}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 328142147}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 62717914}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1414514227}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2084987694}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1947301895}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1174639643}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1965284643}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1293298301}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 595767713}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 391128504}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1087377451}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 169498383}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1531276432}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1673835753}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1869454898}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1944062003}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1909843811}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 926010290}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 151610907}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 704347659}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2023920434}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1424200875}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 758581748}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 229336786}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 220547221}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 556254920}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 254025543}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1024242729}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1452828016}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1015405431}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 788344955}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1817106820}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 169265858}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 687713807}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1228754148}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 520341420}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 764672945}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1155649173}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 128358002}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 196768394}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2049950434}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 872956847}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 473417119}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1124668981}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 220918027}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 306943171}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 233863007}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1346288233}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 83687504}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1842301538}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1414761757}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1715243524}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1687347895}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1474643637}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1728102999}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 24471975}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1098983906}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 752441060}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1564292071}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1280297153}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 537970129}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1329577064}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1299625706}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 910620666}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1890412993}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1314037449}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1257651642}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 427778517}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 984896196}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 427862466}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1624938798}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1958996667}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 89917995}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1758615617}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 917640159}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 880719126}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1149767292}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2134289163}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 891193261}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1115095404}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 743608656}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 543524287}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 111625378}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 615958352}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 725109993}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 933900258}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1227154555}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2009745636}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2114637815}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 3901004}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2074289643}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1373814552}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 591576627}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 287454394}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1176625239}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1089469552}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1268555040}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1834275250}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1855497602}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1636399918}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1657117413}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 635326681}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 783192628}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 523583147}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 845857235}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 954948801}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1457712314}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -39970,32 +39997,6 @@ Prefab:
   m_RootGameObject: {fileID: 26374749}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!21 &858552819
-Material:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ghost material
-  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: []
-  m_CustomRenderQueue: -1
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 0e0df75813dc39445b1a56320d86acf1, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats: {}
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: .5, g: .5, b: 1, a: .5}
 --- !u!1 &858696828
 GameObject:
   m_ObjectHideFlags: 0
@@ -49352,840 +49353,840 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1053319368}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1653500843}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 437071441}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 898787717}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1561317008}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1264279308}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 29521592}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 297718434}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 891162082}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1733517453}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 194587915}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 765142178}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 840469527}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1636955590}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 195261163}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 361560020}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 260765215}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 219740126}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 528123382}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1193204966}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 874919025}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 455933964}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1982991647}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 809419255}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 175314972}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1547232519}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 125242356}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1902325803}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 484747025}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1979215096}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 646230523}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1349642603}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1985236414}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1330264438}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 922750260}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1236910400}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1743802648}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 897929074}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2085266242}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 795452897}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2001428862}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2143295240}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1765847762}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 25454111}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 544749134}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1407145942}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1407996362}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1133440556}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2116342874}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1718756518}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1839835852}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1864638218}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1913174415}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 555366376}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1195484511}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2122696914}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1982278110}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 402703670}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1505857566}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 853918510}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1567206213}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1481267297}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 751794233}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1616784958}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 561434537}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 119885384}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1850134376}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1814721642}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2077123300}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 775316445}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 560413924}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 356281150}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 852813223}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1563075383}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1713646825}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1759787939}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 675398267}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2003994408}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1146196479}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 815627693}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 387171982}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1315116593}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2042147866}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1365968154}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 277956511}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1186986752}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1260221085}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 519124577}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 974965468}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1152004354}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 569387607}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 77094545}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 256208574}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1574126883}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1329706784}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 962695436}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1631007237}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 296755154}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 666409994}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1500379144}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 176119064}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1036664375}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 709534928}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1284248404}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 556913805}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1357684810}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 992811965}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1580465463}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1124440187}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1688162947}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 668072688}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 553066637}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1132825354}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1437330690}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 300732821}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 938939373}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1850278211}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1463148413}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1373327449}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -53704,32 +53705,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1504017393}
   m_GameObject: {fileID: 1115095404}
   m_Mesh: {fileID: 4300030, guid: 5be880e719b89ea4e86f6523cf2c3ee4, type: 3}
---- !u!21 &1115428488
-Material:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ghost material
-  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: []
-  m_CustomRenderQueue: -1
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 0e0df75813dc39445b1a56320d86acf1, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats: {}
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: .5, g: .5, b: 1, a: .5}
 --- !u!1001 &1116903120
 Prefab:
   m_ObjectHideFlags: 0
@@ -53871,7 +53846,7 @@ GameObject:
   - 65: {fileID: 1117369325}
   - 114: {fileID: 1117369324}
   m_Layer: 0
-  m_Name: Ghost
+  m_Name: ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53930,7 +53905,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 1231946399}
+  - {fileID: 179081866}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -57208,32 +57183,6 @@ Prefab:
   m_RootGameObject: {fileID: 1481267297}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!21 &1231946399
-Material:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ghost material
-  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: []
-  m_CustomRenderQueue: -1
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 0e0df75813dc39445b1a56320d86acf1, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats: {}
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: .5, g: .5, b: 1, a: .5}
 --- !u!1001 &1232485891
 Prefab:
   m_ObjectHideFlags: 0
@@ -59045,6 +58994,32 @@ Prefab:
   m_RootGameObject: {fileID: 933960625}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!21 &1305010941
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ghost material
+  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 0e0df75813dc39445b1a56320d86acf1, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .5, g: .5, b: 1, a: .5}
 --- !u!1 &1305138974
 GameObject:
   m_ObjectHideFlags: 0
@@ -61144,28 +61119,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 670776667}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1469314377}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 296478847}
     orientationMask: 104
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -61354,28 +61329,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 819988554}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 271525676}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1511881695}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -61564,28 +61539,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 83838141}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 734418760}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1611278911}
     orientationMask: 107
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -61774,28 +61749,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 487752440}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 690792756}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1760490377}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -61984,28 +61959,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1585613520}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 770048747}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 64694589}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -62194,28 +62169,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 848603031}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1845415377}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1541984786}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -62404,28 +62379,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1876548952}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1306617728}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 845927863}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -62614,28 +62589,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1080030995}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1508196061}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 175228476}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -62824,28 +62799,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1054319960}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1611721824}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1139497987}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -63034,28 +63009,28 @@ MonoBehaviour:
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1723215746}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2111272144}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1972394884}
     orientationMask: 107
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -63244,28 +63219,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 770955911}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 567745888}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 145322408}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -63454,28 +63429,28 @@ MonoBehaviour:
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1305138974}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 291030582}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 239503438}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -63664,28 +63639,28 @@ MonoBehaviour:
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 34333147}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 751600108}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1623485008}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -63874,28 +63849,28 @@ MonoBehaviour:
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 105400587}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1236940445}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1385798933}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -64084,28 +64059,28 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 642496373}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 783536637}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1194584850}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -64294,161 +64269,161 @@ MonoBehaviour:
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1035425099}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 965284728}
     orientationMask: 255
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 455510198}
     orientationMask: 251
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1873679992}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 436827469}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1327938757}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 665856763}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1502605625}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2051847905}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 974467444}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 529720892}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2141765965}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 437708778}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 420806430}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 933960625}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 846857024}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 889266537}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 836060896}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 189523653}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 426421320}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 487337609}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1937591388}
     orientationMask: 104
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -64504,840 +64479,840 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 571625817}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1727424520}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 85238483}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1314645442}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 643537937}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 728586797}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1925427511}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1639696540}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 771509667}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2099818389}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 779028963}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1243353101}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 765947364}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 518630942}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1021932995}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1316686633}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1097550380}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 484547721}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 885576075}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 858696828}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 276013414}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1726191782}
     orientationMask: 251
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 9016959}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 981276529}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2001374053}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 676395494}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 26374749}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 60136666}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1645855236}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1679630780}
     orientationMask: 214
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1850250038}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1510035935}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 761003099}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1710206295}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 562160436}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1826429276}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1261328385}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1747403178}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1436428954}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1983417275}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 607349957}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1941458452}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1935807446}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 110307460}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1869692633}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 656636168}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1820106582}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1771915688}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 118701554}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1484483083}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1035080805}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 530827020}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1652796380}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1491586745}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 632821789}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 690698240}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 768670746}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 275113497}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 153630806}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1803568081}
     orientationMask: 214
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 900026644}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 963118347}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 873674758}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1182435019}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 588008141}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1216471374}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 66696764}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1720036163}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2043444800}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 361905694}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1840650991}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 316121911}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 869621410}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 200726233}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 240800024}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 12511260}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 804831817}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 957561848}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1824109691}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 514430453}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1407446669}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 902330935}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 369902622}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 480606362}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1128814434}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 262774104}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 547961835}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1729969892}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 72805367}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 395423195}
     orientationMask: 22
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1814653028}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1318590880}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 457911215}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 704653657}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1405720354}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 444374154}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1306854651}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1067119019}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 263946013}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1910263044}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 483727157}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 847557598}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 905454342}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1963528919}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1307313993}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 351933695}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 732189126}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 688584620}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1433010684}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1602319186}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1853627245}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 995233202}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1842867354}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 27534029}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2053160868}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 220807623}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 869934882}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1383596941}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1184684957}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -72778,7 +72753,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 764fd1a082c426d45a0049bcc5e9b4e3, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 433916320}
+      objectReference: {fileID: 728382446}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 764fd1a082c426d45a0049bcc5e9b4e3, type: 2}
   m_RootGameObject: {fileID: 722018232}
@@ -76954,6 +76929,32 @@ Prefab:
   m_RootGameObject: {fileID: 1124668981}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!21 &1679339502
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ghost material
+  m_Shader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 0e0df75813dc39445b1a56320d86acf1, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .5, g: .5, b: 1, a: .5}
 --- !u!1 &1679630780
 GameObject:
   m_ObjectHideFlags: 0
@@ -81306,7 +81307,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 764fd1a082c426d45a0049bcc5e9b4e3, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 858552819}
+      objectReference: {fileID: 1679339502}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 764fd1a082c426d45a0049bcc5e9b4e3, type: 2}
   m_RootGameObject: {fileID: 644859908}
@@ -84233,7 +84234,7 @@ GameObject:
   - 65: {fileID: 1937688126}
   - 114: {fileID: 1937688125}
   m_Layer: 0
-  m_Name: Ghost
+  m_Name: ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84292,7 +84293,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 1115428488}
+  - {fileID: 25894122}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -87020,7 +87021,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 764fd1a082c426d45a0049bcc5e9b4e3, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1115428488}
+      objectReference: {fileID: 25894122}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 764fd1a082c426d45a0049bcc5e9b4e3, type: 2}
   m_RootGameObject: {fileID: 1937688123}
@@ -92397,70 +92398,70 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 920956148}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 606636250}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1671554927}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1351501120}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2137075894}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 101726700}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 37207360}
     orientationMask: 248
     variationIndex: 1
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1781095770}
     orientationMask: 248
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1170470804}
     orientationMask: 104
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -92607,70 +92608,70 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 854983363}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1783541018}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1340603690}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1541961266}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1653857783}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1190606651}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1650399657}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1601356568}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1951045925}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -92817,70 +92818,70 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 486204240}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 207090030}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 919481860}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 416343196}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 90534437}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 2101367767}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 179563915}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1357907189}
     orientationMask: 255
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1991787601}
     orientationMask: 107
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0
@@ -93027,70 +93028,70 @@ MonoBehaviour:
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 191738789}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 181309201}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1495643932}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 268736151}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1937525262}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 977624821}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 345613142}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 1077099873}
     orientationMask: 31
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 720896
     gameObject: {fileID: 370352560}
     orientationMask: 11
     variationIndex: 0
     tilesetIndex: -1
     tileset: {fileID: 0}
-    brush: {fileID: 11400000, guid: 6f04a6bab2449514c8d5ca5961edc200, type: 2}
+    brush: {fileID: 0}
   - _flags: 0
     gameObject: {fileID: 0}
     orientationMask: 0

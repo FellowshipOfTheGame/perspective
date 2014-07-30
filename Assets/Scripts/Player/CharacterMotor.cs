@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Security.Cryptography;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Collider))]
@@ -10,6 +11,8 @@ public class CharacterMotor : MonoBehaviour
 
     public float JumpHeight = 2.01f;
     public float AccelerationOnAir = 15f;
+
+    public float GroundDistance = .5f;
 
     private bool _isGrounded;
     public float TurningSpeed = 3;
@@ -23,7 +26,7 @@ public class CharacterMotor : MonoBehaviour
 
     public void FixedUpdate()
     {
-        _isGrounded = Physics.Raycast(transform.position, Vector3.down, collider.bounds.extents.y + .01f);
+        _isGrounded = Physics.Raycast(transform.position, Vector3.down, GroundDistance);
 
         float acceleration = _isGrounded ? AccelerationOnGround : AccelerationOnAir;
 
@@ -67,5 +70,11 @@ public class CharacterMotor : MonoBehaviour
 
         _animator.SetFloat("speed", Mathf.Abs(velocity.x));
         _animator.SetBool("grounded", _isGrounded);
+    }
+
+    public void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, Vector3.down * GroundDistance);
     }
 }
