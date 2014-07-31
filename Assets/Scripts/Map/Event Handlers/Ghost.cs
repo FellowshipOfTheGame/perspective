@@ -5,20 +5,23 @@ public class Ghost : LayerEventHandler
     public Material MaterialWhenEnabled;
     public Material MaterialWhenDisabled;
 
-    protected override void OnLayerEnabled()
+
+    public override void OnLayerEnabled()
     {
         gameObject.renderer.material = MaterialWhenEnabled;
         gameObject.collider.enabled = true;
+
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            gameObject.renderer.material = MaterialWhenDisabled;
+        }
+#endif
     }
 
-    protected override void OnLayerDisabled()
+    public override void OnLayerDisabled()
     {
         gameObject.renderer.material = MaterialWhenDisabled;
         gameObject.collider.enabled = false;
-    }
-
-    protected override Color EditorTint
-    {
-        get { return new Color(.5f, .5f, 1f, .5f); }
     }
 }

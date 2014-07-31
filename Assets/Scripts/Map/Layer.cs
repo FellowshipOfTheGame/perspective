@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class Layer : MonoBehaviour
 {
     public bool LayerEnabled = true;
@@ -8,6 +9,19 @@ public class Layer : MonoBehaviour
 
     public void Start()
     {
+        foreach (LayerEventHandler eventHandler in GetComponentsInChildren<LayerEventHandler>())
+        {
+#if UNITY_EDITOR
+            if (!Application.isPlaying)
+            {
+                OnLayerDisabled -= eventHandler.OnLayerDisabled;
+                OnLayerEnabled -= eventHandler.OnLayerEnabled;
+            }
+#endif
+            OnLayerDisabled += eventHandler.OnLayerDisabled;
+            OnLayerEnabled += eventHandler.OnLayerEnabled;
+        }
+
         DoToggle();
     }
 
