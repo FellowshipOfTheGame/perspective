@@ -6,8 +6,8 @@ using UnityEngine;
 public class EndScene : MonoBehaviour
 {
     public string NextScene;
-    public float FadeOutTime;
-    public Color FadeOutColor;
+    public float FadeOutTime = 1f;
+    public Color FadeOutColor = Color.black;
     private bool _isEnding;
 
     public void OnTriggerEnter(Collider collider)

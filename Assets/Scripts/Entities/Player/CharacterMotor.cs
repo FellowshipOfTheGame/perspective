@@ -1,9 +1,10 @@
 ﻿using System.Security.Cryptography;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Collider))]
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof (Rigidbody))]
+[RequireComponent(typeof (Collider))]
+[RequireComponent(typeof (Animator))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class CharacterMotor : MonoBehaviour
 {
     public float AccelerationOnGround = 100f;
@@ -12,34 +13,42 @@ public class CharacterMotor : MonoBehaviour
     public float JumpHeight = 2.01f;
     public float AccelerationOnAir = 15f;
 
-    public float GroundDistance = .5f;
+    //public float GroundDistance = .5f;
 
     private bool _isGrounded;
     public float TurningSpeed = 3;
 
     private Animator _animator;
+    private Vector3 _colliderCenter;
 
     public void Start()
     {
         _animator = GetComponent<Animator>();
+        _colliderCenter = ((CapsuleCollider)collider).center;
     }
 
     public void FixedUpdate()
     {
-        _isGrounded = Physics.Raycast(transform.position, Vector3.down, GroundDistance);
+        _isGrounded = Physics.Raycast(
+            origin: transform.position + _colliderCenter, 
+            direction: Vector3.down, 
+            distance: collider.bounds.extents.y);
 
         float acceleration = _isGrounded ? AccelerationOnGround : AccelerationOnAir;
 
         float horizontalInput = Input.GetAxis("Horizontal");
-
-        bool pathBlocked = Physics.Raycast(
-            origin: transform.position,
-            direction: Mathf.Sign(horizontalInput)*Vector3.right,
-            distance: collider.bounds.extents.x);
-
-        if (!pathBlocked)
+        
+        if (horizontalInput != 0f)
         {
-            rigidbody.AddForce(horizontalInput*acceleration*Vector3.right);
+            bool pathBlocked = Physics.Raycast(
+                origin: transform.position,
+                direction: Mathf.Sign(horizontalInput) * Vector3.right,
+                distance: collider.bounds.extents.y+.01f);
+
+            if (!pathBlocked)
+            {
+                rigidbody.AddForce(horizontalInput * acceleration * Vector3.right);
+            }
         }
 
         Vector3 velocity = rigidbody.velocity;
@@ -75,6 +84,6 @@ public class CharacterMotor : MonoBehaviour
     public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, Vector3.down * GroundDistance);
+        Gizmos.DrawRay(transform.position + ((CapsuleCollider)collider).center, Vector3.down * collider.bounds.extents.y);
     }
 }
