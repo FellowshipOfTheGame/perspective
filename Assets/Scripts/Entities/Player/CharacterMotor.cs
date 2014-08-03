@@ -1,5 +1,4 @@
-﻿using System.Security.Cryptography;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof (Rigidbody))]
 [RequireComponent(typeof (Collider))]
@@ -10,16 +9,17 @@ public class CharacterMotor : MonoBehaviour
     public float AccelerationOnGround = 100f;
     public float MaxHorizontalVelocity = 50f;
 
+    public float TurningSpeed = 3;
+
     public float JumpHeight = 2.01f;
     public float AccelerationOnAir = 15f;
 
-    //public float GroundDistance = .5f;
-
     private bool _isGrounded;
-    public float TurningSpeed = 3;
 
     private Animator _animator;
     private Vector3 _colliderCenter;
+
+    public AudioClipArray JumpAudio;
 
     public void Start()
     {
@@ -41,7 +41,7 @@ public class CharacterMotor : MonoBehaviour
         if (horizontalInput != 0f)
         {
             bool pathBlocked = Physics.Raycast(
-                origin: transform.position,
+                origin: transform.position + _colliderCenter,
                 direction: Mathf.Sign(horizontalInput) * Vector3.right,
                 distance: collider.bounds.extents.y+.01f);
 
@@ -58,6 +58,7 @@ public class CharacterMotor : MonoBehaviour
             if (Input.GetButton("Jump"))
             {
                 velocity.y = Mathf.Sqrt(-2f*Physics.gravity.y*JumpHeight);
+                JumpAudio.PlayRandomAtPoint(transform.position);
             }
         }
 
