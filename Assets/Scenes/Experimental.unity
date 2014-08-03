@@ -941,6 +941,7 @@ MonoBehaviour:
   version: 2.3.1
   _editable: 1
   _built: 0
+  _locked: 0
   tileSize: {x: 1, y: 1, z: 1}
   _tilesFacing: 0
   rows: 20
@@ -968,6 +969,8 @@ MonoBehaviour:
     _includeSolidTiles: 0
     _solidTileColliderType: 1
   _hintForceRefresh: 0
+  _lastBuildPrefabPath: 
+  _lastBuildDataPath: 
   sceneOrder: 0
   _chunkColumns: 4
   _chunkRows: 1
@@ -980,8 +983,7 @@ MonoBehaviour:
   - {fileID: 0}
   hintEraseEmptyChunks: 0
   addProceduralNormals: 0
-  activeRow: 6
-  activeColumn: 27
+  _markProceduralDynamic: 1
 --- !u!4 &378099094
 Transform:
   m_ObjectHideFlags: 0
@@ -1592,6 +1594,7 @@ MonoBehaviour:
   version: 2.2.2
   _editable: 1
   _built: 0
+  _locked: 0
   tileSize: {x: 1, y: 1, z: 1}
   _tilesFacing: 0
   rows: 20
@@ -1619,6 +1622,8 @@ MonoBehaviour:
     _includeSolidTiles: 0
     _solidTileColliderType: 1
   _hintForceRefresh: 0
+  _lastBuildPrefabPath: 
+  _lastBuildDataPath: 
   sceneOrder: 1
   _chunkColumns: 4
   _chunkRows: 1
@@ -1631,8 +1636,7 @@ MonoBehaviour:
   - {fileID: 0}
   hintEraseEmptyChunks: 0
   addProceduralNormals: 0
-  activeRow: 18
-  activeColumn: 33
+  _markProceduralDynamic: 1
 --- !u!1001 &626807473
 Prefab:
   m_ObjectHideFlags: 0

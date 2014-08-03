@@ -2,26 +2,31 @@
 
 public class Ghost : LayerEventHandler
 {
-    public Material MaterialWhenEnabled;
-    public Material MaterialWhenDisabled;
-
+    public float ghostOpactity = 0.5f;
 
     public override void OnLayerEnabled()
     {
-        gameObject.renderer.material = MaterialWhenEnabled;
+        Color newColor = gameObject.renderer.sharedMaterial.color;
+        newColor.a = 1.0f;
+        gameObject.renderer.sharedMaterial.color = newColor;
+        
         gameObject.collider.enabled = true;
 
 #if UNITY_EDITOR
         if (!Application.isPlaying)
         {
-            gameObject.renderer.material = MaterialWhenDisabled;
+            newColor.a = ghostOpactity;
+            gameObject.renderer.sharedMaterial.color = newColor;
         }
 #endif
     }
 
     public override void OnLayerDisabled()
     {
-        gameObject.renderer.material = MaterialWhenDisabled;
+        Color newColor = gameObject.renderer.sharedMaterial.color;
+        newColor.a = ghostOpactity;
+        gameObject.renderer.sharedMaterial.color = newColor;
+
         gameObject.collider.enabled = false;
     }
 }

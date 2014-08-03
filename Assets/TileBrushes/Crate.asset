@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 1641050660, guid: 533361e04fa896b4395cced4d33088c3, type: 3}
   m_Name: Crate
   m_EditorClassIdentifier: 
-  _internalFlags: 0
+  _internalFlags: 1
   disableImmediatePreview: 0
-  _previewAssetId: 
+  _previewAssetId: z_44e3ec00-2596-4bd6-914e-3a261f9f90cd
   customPreviewImage: {fileID: 0}
   customPreviewDesignTime: 1
   _static: 1
@@ -37,5 +37,7 @@ MonoBehaviour:
   _userFlagLabels: 
   target: {fileID: 11400000, guid: b4899ce312447c244b32377d2058b9f4, type: 2}
   overrideFlags: 0
-  _materialMappingFrom: []
-  _materialMappingTo: []
+  _materialMappingFrom:
+  - {fileID: 2100000, guid: 8eb8fe8e11c438b45b1dacc26ece5315, type: 2}
+  _materialMappingTo:
+  - {fileID: 2100000, guid: cc534f8624544ec42b8e50a638655c9c, type: 2}
