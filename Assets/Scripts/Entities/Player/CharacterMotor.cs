@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof (Rigidbody))]
 [RequireComponent(typeof (Collider))]
 [RequireComponent(typeof (Animator))]
-[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof (SpriteRenderer))]
 public class CharacterMotor : MonoBehaviour
 {
     public float AccelerationOnGround = 100f;
@@ -21,33 +22,33 @@ public class CharacterMotor : MonoBehaviour
 
     public AudioClipArray JumpAudio;
 
-    public void Start()
+    public void Awake()
     {
         _animator = GetComponent<Animator>();
-        _colliderCenter = ((CapsuleCollider)collider).center;
+        _colliderCenter = ((CapsuleCollider) collider).center;
     }
 
     public void FixedUpdate()
     {
         _isGrounded = Physics.Raycast(
-            origin: transform.position + _colliderCenter, 
-            direction: Vector3.down, 
+            origin: transform.position + _colliderCenter,
+            direction: Vector3.down,
             distance: collider.bounds.extents.y);
 
         float acceleration = _isGrounded ? AccelerationOnGround : AccelerationOnAir;
 
         float horizontalInput = Input.GetAxis("Horizontal");
-        
-        if (horizontalInput != 0f)
+
+        if (Math.Abs(horizontalInput) > .01f)
         {
             bool pathBlocked = Physics.Raycast(
                 origin: transform.position + _colliderCenter,
-                direction: Mathf.Sign(horizontalInput) * Vector3.right,
-                distance: collider.bounds.extents.y+.01f);
+                direction: Mathf.Sign(horizontalInput)*Vector3.right,
+                distance: collider.bounds.extents.y + .01f);
 
             if (!pathBlocked)
             {
-                rigidbody.AddForce(horizontalInput * acceleration * Vector3.right);
+                rigidbody.AddForce(horizontalInput*acceleration*Vector3.right);
             }
         }
 
@@ -85,6 +86,6 @@ public class CharacterMotor : MonoBehaviour
     public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position + ((CapsuleCollider)collider).center, Vector3.down * collider.bounds.extents.y);
+        Gizmos.DrawRay(transform.position + ((CapsuleCollider) collider).center, Vector3.down*collider.bounds.extents.y);
     }
 }

@@ -21,6 +21,6 @@ public class PlayerSpawn : MonoBehaviour
         }
 
         GameObject player = (GameObject)Instantiate(PlayerPrefab, transform.position, Quaternion.identity);
-        Camera.main.GetComponent<SmoothFollow>().target = player.transform;
+        Camera.main.GetComponent<CameraFollow>().Target = player.transform;
     }
 }
