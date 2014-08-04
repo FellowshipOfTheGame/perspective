@@ -201,7 +201,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!65 &95326040
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -274,7 +274,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 12
+  m_RootOrder: 27
 --- !u!114 &104725144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +608,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 1
+  m_RootOrder: 16
 --- !u!65 &249365303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -680,7 +680,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 18
+  m_RootOrder: 5
 --- !u!65 &253873394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -752,7 +752,7 @@ Transform:
   m_LocalScale: {x: 1.00000036, y: 1.00000036, z: 1.00000036}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 19
+  m_RootOrder: 6
 --- !u!65 &280671296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7301,7 +7301,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 3
+  m_RootOrder: 18
 --- !u!65 &315863003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7521,7 +7521,7 @@ GameObject:
   - 114: {fileID: 378099095}
   - 114: {fileID: 378099093}
   m_Layer: 0
-  m_Name: Layer 0
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7639,7 +7639,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 4
+  m_RootOrder: 19
 --- !u!65 &380314682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7860,7 +7860,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!65 &447013588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7996,7 +7996,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 22
+  m_RootOrder: 9
 --- !u!65 &455748098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8116,7 +8116,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 26
+  m_RootOrder: 13
 --- !u!65 &467410558
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8189,7 +8189,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 13
+  m_RootOrder: 0
 --- !u!114 &476412387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8284,7 +8284,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!114 &482795949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8378,7 +8378,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!65 &498513474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8450,7 +8450,7 @@ Transform:
   m_LocalScale: {x: 1.00000036, y: 1.00000036, z: 1.00000036}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!65 &528763317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8571,7 +8571,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 12
+  m_RootOrder: 13
 --- !u!114 &564215799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15195,7 +15195,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 15
+  m_RootOrder: 2
 --- !u!114 &611916858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15289,7 +15289,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 5
+  m_RootOrder: 20
 --- !u!65 &613503787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15343,7 +15343,7 @@ GameObject:
   - 114: {fileID: 620085913}
   - 114: {fileID: 620085912}
   m_Layer: 0
-  m_Name: Layer 1
+  m_Name: Suspended Crates 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15461,7 +15461,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 17
+  m_RootOrder: 4
 --- !u!114 &625423510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15555,7 +15555,7 @@ Transform:
   m_LocalScale: {x: 1.00000036, y: 1.00000036, z: 1.00000036}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 2
+  m_RootOrder: 17
 --- !u!65 &684138092
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15739,7 +15739,7 @@ Transform:
   m_LocalScale: {x: 1.00000036, y: 1.00000036, z: 1.00000036}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 20
+  m_RootOrder: 7
 --- !u!65 &695466674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15811,7 +15811,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 17
+  m_RootOrder: 18
 --- !u!65 &724040506
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15884,7 +15884,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 16
+  m_RootOrder: 3
 --- !u!114 &728013004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16155,7 +16155,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 14
+  m_RootOrder: 1
 --- !u!114 &807075756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16530,7 +16530,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 21
+  m_RootOrder: 8
 --- !u!65 &850034472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16602,7 +16602,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 20
+  m_RootOrder: 21
 --- !u!65 &859051906
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16778,7 +16778,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 7
+  m_RootOrder: 22
 --- !u!65 &923457582
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17003,9 +17003,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597f63d4e5ad3de468a20798dac981a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
+  _target: {fileID: 0}
   Distance: {x: 0, y: 1.5, z: -6}
-  SmoothTime: .200000003
+  SmoothTime: 2
+  HorizontalAheadOfTime: 2
 --- !u!1 &942146675
 GameObject:
   m_ObjectHideFlags: 0
@@ -17035,7 +17036,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 8
+  m_RootOrder: 23
 --- !u!65 &942146677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17107,7 +17108,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 18
+  m_RootOrder: 19
 --- !u!65 &954271946
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17243,7 +17244,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 6
+  m_RootOrder: 21
 --- !u!65 &992032059
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17410,7 +17411,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!65 &1083344957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17551,7 +17552,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!114 &1170753972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17627,7 +17628,7 @@ GameObject:
   - 114: {fileID: 1174171214}
   - 114: {fileID: 1174171213}
   m_Layer: 0
-  m_Name: Layer 2
+  m_Name: Suspended Crates 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17756,7 +17757,7 @@ Transform:
   m_LocalScale: {x: 1.00000036, y: 1.00000036, z: 1.00000036}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 16
+  m_RootOrder: 17
 --- !u!65 &1185606733
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17960,7 +17961,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!65 &1246967048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18029,6 +18030,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1506504806}
   - {fileID: 1083344956}
   - {fileID: 498513473}
   - {fileID: 1670331438}
@@ -18050,7 +18052,6 @@ Transform:
   - {fileID: 954271945}
   - {fileID: 2012048811}
   - {fileID: 859051905}
-  - {fileID: 1506504806}
   m_Father: {fileID: 378099094}
   m_RootOrder: 1
 --- !u!114 &1297622452
@@ -24460,7 +24461,7 @@ Transform:
   m_LocalScale: {x: 1.00000036, y: 1.00000036, z: 1.00000036}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!65 &1369241461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24532,7 +24533,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 24
+  m_RootOrder: 11
 --- !u!65 &1377457601
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24604,7 +24605,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 9
+  m_RootOrder: 24
 --- !u!65 &1393703848
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24740,7 +24741,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!65 &1470891328
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24940,7 +24941,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 21
+  m_RootOrder: 0
 --- !u!65 &1506504807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25060,7 +25061,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 25
+  m_RootOrder: 12
 --- !u!65 &1541483804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25325,19 +25326,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1651989337}
-  - {fileID: 249365302}
-  - {fileID: 684138091}
-  - {fileID: 315863002}
-  - {fileID: 380314681}
-  - {fileID: 613503786}
-  - {fileID: 992032058}
-  - {fileID: 923457581}
-  - {fileID: 942146676}
-  - {fileID: 1393703847}
-  - {fileID: 2132023854}
-  - {fileID: 1970119007}
-  - {fileID: 104725143}
   - {fileID: 476412386}
   - {fileID: 807075755}
   - {fileID: 611916857}
@@ -25353,6 +25341,19 @@ Transform:
   - {fileID: 1541483803}
   - {fileID: 467410557}
   - {fileID: 1800790474}
+  - {fileID: 1651989337}
+  - {fileID: 249365302}
+  - {fileID: 684138091}
+  - {fileID: 315863002}
+  - {fileID: 380314681}
+  - {fileID: 613503786}
+  - {fileID: 992032058}
+  - {fileID: 923457581}
+  - {fileID: 942146676}
+  - {fileID: 1393703847}
+  - {fileID: 2132023854}
+  - {fileID: 1970119007}
+  - {fileID: 104725143}
   m_Father: {fileID: 378099094}
   m_RootOrder: 0
 --- !u!114 &1552033673
@@ -31827,7 +31828,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 0
+  m_RootOrder: 15
 --- !u!65 &1651989338
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31967,7 +31968,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!65 &1670331439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32040,7 +32041,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!114 &1676946068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32394,7 +32395,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!65 &1783783456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32500,7 +32501,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 27
+  m_RootOrder: 14
 --- !u!65 &1800790475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32815,7 +32816,7 @@ Transform:
   m_LocalScale: {x: 1.00000048, y: 1.00000048, z: 1.00000048}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 23
+  m_RootOrder: 10
 --- !u!65 &1855184205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32888,7 +32889,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!114 &1880178315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33392,7 +33393,7 @@ Transform:
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 11
+  m_RootOrder: 26
 --- !u!65 &1970119008
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33512,7 +33513,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 19
+  m_RootOrder: 20
 --- !u!65 &2012048812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33632,7 +33633,7 @@ Transform:
   m_LocalScale: {x: 1.00000036, y: 1.00000036, z: 1.00000036}
   m_Children: []
   m_Father: {fileID: 1297622451}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!65 &2126035033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33704,7 +33705,7 @@ Transform:
   m_LocalScale: {x: 1.00000024, y: 1.00000024, z: 1.00000024}
   m_Children: []
   m_Father: {fileID: 1552033672}
-  m_RootOrder: 10
+  m_RootOrder: 25
 --- !u!65 &2132023855
 BoxCollider:
   m_ObjectHideFlags: 0

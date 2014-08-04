@@ -103,18 +103,6 @@ MonoBehaviour:
     - {fileID: 8300000, guid: eeb4901216700c74092c40d9264a35f0, type: 3}
     - {fileID: 8300000, guid: 6a4fcb8be36632e4bae3d9d7ec5aa034, type: 3}
     - {fileID: 8300000, guid: b7bd04ae650b49e448f338970196756b, type: 3}
-  FootStepAudio:
-    Clips:
-    - {fileID: 8300000, guid: 180d850bad5c073419c980604c39423b, type: 3}
-    - {fileID: 8300000, guid: 5812a416c25ce0d448b66a152347cca1, type: 3}
-    - {fileID: 8300000, guid: bcc66cfa61fd45d448fdca82d5564b65, type: 3}
-    - {fileID: 8300000, guid: d7684dc13aac69040ab74b69c6ad2593, type: 3}
-    - {fileID: 8300000, guid: 73cb352bd8ac2ed4a8ed08ea398f10f4, type: 3}
-    - {fileID: 8300000, guid: 64f85921f69ce0f479123d9efef235da, type: 3}
-    - {fileID: 8300000, guid: bd9dd6ead05c3404e84a18bccd386637, type: 3}
-    - {fileID: 8300000, guid: ed95c26fe0851c646a4560867d89485c, type: 3}
-    - {fileID: 8300000, guid: f26b8f568d559a04b97eaefbac93f22d, type: 3}
-    - {fileID: 8300000, guid: 7d1fc1ea418f31c46bfd41989d06fecb, type: 3}
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
