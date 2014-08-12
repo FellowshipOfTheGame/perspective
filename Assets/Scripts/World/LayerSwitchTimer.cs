@@ -22,11 +22,13 @@ public class LayerSwitchTimer : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (layers.Length == 0 || (Time.realtimeSinceStartup - lastTimeChange) < timerDelayInSeconds)
+        if (layers.Length < 2 || (Time.realtimeSinceStartup - lastTimeChange) < timerDelayInSeconds)
             return;
-
         int nextIndex;
-        nextIndex = (index + 1) % layers.Length;
+        do
+        {
+            nextIndex = (index + 1) % layers.Length;
+        } while (layers[nextIndex] == null);
 
         layers[index].LayerEnabled = false;
         layers[nextIndex].LayerEnabled = true;

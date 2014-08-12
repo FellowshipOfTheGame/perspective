@@ -376,7 +376,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e0b61b9ce68451d44a642ba362592703, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: e0b61b9ce68451d44a642ba362592703, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -18154,7 +18154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e0b61b9ce68451d44a642ba362592703, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e0b61b9ce68451d44a642ba362592703, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -45331,7 +45331,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3a2c2f5b90d001b46bab10dff7a694c6, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 3a2c2f5b90d001b46bab10dff7a694c6, type: 2}
       propertyPath: m_Materials.Array.data[0]

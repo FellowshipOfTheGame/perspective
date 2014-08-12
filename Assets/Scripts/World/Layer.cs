@@ -32,6 +32,14 @@ public class Layer : MonoBehaviour
             DoToggle();
         }
     }
+    public void RemoveEvents(GameObject obj)
+    {
+        foreach (LayerEventHandler eventHandler in obj.GetComponents<LayerEventHandler>())
+        {
+            OnLayerDisabled -= eventHandler.OnLayerDisabled;
+            OnLayerEnabled -= eventHandler.OnLayerEnabled;
+        }
+    }
 
     private void DoToggle()
     {

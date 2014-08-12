@@ -11,6 +11,7 @@ public class ExplosionHandler : LayerEventHandler
         Enabled = false;
         foreach (GameObject obj in nearObjects)
         {
+            if (obj == null) continue;
             if(obj.GetComponent<ExplosionHandler>() != null)
                 obj.GetComponent<ExplosionHandler>().OnExplosion(player);
         }
@@ -20,6 +21,8 @@ public class ExplosionHandler : LayerEventHandler
                 player.GetComponent<PlayerDeath>().OnDeath();
         }
         //TODO: Don't explode, or recreate on respawn
+        if(GetComponentInParent<Layer>() != null)
+            GetComponentInParent<Layer>().RemoveEvents(this.gameObject);
         DestroyObject(gameObject);
     }
 
