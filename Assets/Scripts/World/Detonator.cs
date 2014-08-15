@@ -2,17 +2,11 @@
 using System.Collections;
 
 public class Detonator : ButtonEventHandler {
-    public GameObject tnt;
+    public TNT Tnt;
     public override void OnButtonDown()
     {
-        if (tnt == null) return;
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        foreach (GameObject player in players)
-        {
-            if (!player.GetComponent<PlayerDeath>().IsAlive) continue;
-            if (tnt.GetComponent<ExplosionHandler>() != null)
-                tnt.GetComponent<ExplosionHandler>().OnExplosion(player);
-        }
+        if (Tnt == null) return;
+        Tnt.OnExplosion(0.01f, Tnt.transform.position);
     }
     public override void OnButtonUp()
     {
