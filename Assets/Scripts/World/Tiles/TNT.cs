@@ -13,16 +13,19 @@ public class TNT : ExplosionEventHandler
 
     public override void OnExplosion(float radius, Vector3 position)
     {
-        if (Enabled && MathUtility.SqrDistance(position, transform.position) - collider.bounds.extents.x < radius * radius)
+        if (Enabled && Vector3.Distance(position, transform.position) - collider.bounds.extents.x < radius)
         {
             Enabled = false;
             Master.OnTntExplode(ExplosionRadius, transform.position);
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
             {
-                PlayerDeath death = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeath>();
-                if (death != null)
-                    death.OnDeath();
+                if (Vector3.Distance(player.transform.position, transform.position) - ((CapsuleCollider)player.collider).height < radius)
+                {
+                    PlayerDeath death = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeath>();
+                    if (death != null)
+                        death.OnDeath();
+                }
             }
             Master.RemoveEvents(gameObject);
             Layer layer = GetComponentInParent<Layer>();

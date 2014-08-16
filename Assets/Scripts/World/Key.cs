@@ -3,14 +3,13 @@ using System.Collections;
 
 public class Key : MonoBehaviour
 {
-    public int Id;
     public KeyEventHandler KeyTrigger;
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collider)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collider.gameObject.CompareTag("Player"))
         {
-            KeyTrigger.OnKeyAcquired(Id);
+            KeyTrigger.OnKeyAcquired();
             DestroyObject(gameObject);
         }
     }

@@ -7,8 +7,10 @@ public class Button : MonoBehaviour {
     private bool IsPressing;
     private bool IsReleasing;
 	private float LastAction;
-    public event Action OnButtonDown;
-    public event Action OnButtonUp;
+    private event Action OnButtonDown;
+    private event Action OnButtonUp;
+    public float TimeDelayForPressing = 0.2f;
+    public float TimeDelayForReleasing = 0.1f;
 	// Use this for initialization
 	void Start () {
         OriginalPosition = transform.position;
@@ -41,7 +43,7 @@ public class Button : MonoBehaviour {
 
     public void OnCollisionEnter(Collision collision)
     {
-		if (Time.realtimeSinceStartup - LastAction < 0.2f)
+		if (Time.realtimeSinceStartup - LastAction < TimeDelayForPressing)
 			return;
         foreach(ContactPoint contact in collision.contacts)
             if(contact.otherCollider.CompareTag("Player") && !Pressed)
@@ -54,7 +56,7 @@ public class Button : MonoBehaviour {
 
     public void OnCollisionExit(Collision collision)
 	{
-		if (Time.realtimeSinceStartup - LastAction < 0.02f)
+		if (Time.realtimeSinceStartup - LastAction < TimeDelayForReleasing)
 			return;
         foreach (ContactPoint contact in collision.contacts)
             if (contact.otherCollider.CompareTag("Player") && Pressed)

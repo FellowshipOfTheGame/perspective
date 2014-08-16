@@ -25,7 +25,7 @@ MonoBehaviour:
   overrideTag: 0
   tag: Untagged
   category: 0
-  coalesce: 1
+  coalesce: 0
   coalesceBrushGroup: 0
   coalesceWithRotated: 0
   forceLegacySideways: 0
