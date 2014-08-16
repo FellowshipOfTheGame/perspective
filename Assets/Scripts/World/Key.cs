@@ -10,7 +10,7 @@ public class Key : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            KeyTrigger.OnKeyAcquired();
+            KeyTrigger.OnKeyAcquired(Id);
             DestroyObject(gameObject);
         }
     }
