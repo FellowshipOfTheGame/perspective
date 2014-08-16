@@ -17,7 +17,7 @@ public class Door : KeyEventHandler {
         {
             if(child.name == "Handle")
             {
-                DestroyObject(child);
+                DestroyObject(child.gameObject);
             }
             else if(child.name == "Door")
             {
