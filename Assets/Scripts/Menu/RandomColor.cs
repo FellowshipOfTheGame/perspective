@@ -5,6 +5,7 @@ using System.Collections;
 public class RandomColor : MonoBehaviour 
 {
     public float Period = 2.0f;
+    public AudioSource[] Clips;
     public float BrightnessCutoff = 0.6f;
     private byte NextColor = 0;
     private float LastTimeChange;
@@ -18,6 +19,12 @@ public class RandomColor : MonoBehaviour
     {
         if (Time.realtimeSinceStartup - LastTimeChange < Period / 3)
             return;
+        foreach (AudioSource clip in Clips)
+        {
+            if(!clip.isPlaying)
+                clip.Play();   
+        }
+
         Color c;
         float Rand = Random.value;
         if (Rand > BrightnessCutoff)
