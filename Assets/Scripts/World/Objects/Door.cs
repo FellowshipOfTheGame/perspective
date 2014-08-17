@@ -8,7 +8,7 @@ public class Door : KeyEventHandler {
     public string NextScene;
     public float FadeOutTime = 1f;
     public Color FadeOutColor = Color.black;
-    private bool _isEnding;
+    private bool _isEnding = false;
 
     public override void OnKeyAcquired()
     {

@@ -4,11 +4,19 @@ using System.Collections;
 public class TNT : ExplosionEventHandler
 {
     public float ExplosionRadius = 1.0f;
-
+    public AudioClipArray TntAudioClip;
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
             OnExplosion(ExplosionRadius, transform.position);
+    }
+
+    public void Update()
+    {
+        if (gameObject.activeSelf && !Enabled)
+        {
+            Enabled = true;
+        }
     }
 
     public override void OnExplosion(float radius, Vector3 position)
@@ -27,12 +35,9 @@ public class TNT : ExplosionEventHandler
                         death.OnDeath();
                 }
             }
-            Master.RemoveEvents(gameObject);
-            Layer layer = GetComponentInParent<Layer>();
-            if (layer != null)
-                layer.RemoveEvents(gameObject);
-            DestroyObject(gameObject);
-
+            TntAudioClip.PlayNextAtPoint(transform.position);
+            //DestroyObject(gameObject);
+            gameObject.SetActive(false);
         }
     }
 

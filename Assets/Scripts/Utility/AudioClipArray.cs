@@ -14,7 +14,7 @@ public class AudioClipArray
 
     public void PlayNextAtPoint(Vector3 position)
     {
-        Play(lastPlayedIndex+1%Clips.Length, position);
+        Play((lastPlayedIndex + 1)%Clips.Length, position);
     }
 
     private void Play(int index, Vector3 position)

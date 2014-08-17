@@ -25,10 +25,8 @@ public class LayerSwitchTimer : MonoBehaviour
         if (layers.Length < 2 || (Time.realtimeSinceStartup - lastTimeChange) < timerDelayInSeconds)
             return;
         int nextIndex;
-        do
-        {
-            nextIndex = (index + 1) % layers.Length;
-        } while (layers[nextIndex] == null);
+
+        nextIndex = (index + 1) % layers.Length;
 
         layers[index].LayerEnabled = false;
         layers[nextIndex].LayerEnabled = true;
