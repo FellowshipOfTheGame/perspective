@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class Layer : MonoBehaviour
 {
     public bool LayerEnabled = true;
