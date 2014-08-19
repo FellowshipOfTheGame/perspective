@@ -9,7 +9,7 @@ public class Ghost : LayerEventHandler
         Color materialColor = gameObject.renderer.sharedMaterial.color;
         materialColor.a = 1.0f;
         gameObject.renderer.sharedMaterial.color = materialColor;
-        
+
         gameObject.collider.enabled = true;
 
 
