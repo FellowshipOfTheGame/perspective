@@ -7,6 +7,7 @@ public class RandomColor : MonoBehaviour
     public float Period = 2.0f;
     public AudioSource[] Clips;
     public float BrightnessCutoff = 0.6f;
+    public float InitialShininess = 0.4f;
     private byte NextColor = 0;
     private float LastTimeChange;
 
@@ -17,8 +18,13 @@ public class RandomColor : MonoBehaviour
 
 	void Update ()
     {
-        if (Time.realtimeSinceStartup - LastTimeChange < Period / 3)
+        float Delta = Time.realtimeSinceStartup - LastTimeChange;
+        if (Delta < Period / 3)
+        {
+            renderer.sharedMaterial.SetFloat("_Shininess", InitialShininess + (Delta*3/Period)*(1 - InitialShininess));
             return;
+        }
+        renderer.sharedMaterial.SetFloat("_Shininess", InitialShininess);
         foreach (AudioSource clip in Clips)
         {
             if(!clip.isPlaying)

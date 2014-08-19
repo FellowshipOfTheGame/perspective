@@ -12,6 +12,7 @@ public class Ghost : LayerEventHandler
         
         gameObject.collider.enabled = true;
 
+
 #if UNITY_EDITOR
         if (!Application.isPlaying)
         {

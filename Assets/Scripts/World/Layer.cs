@@ -5,7 +5,7 @@ using UnityEngine;
 public class Layer : MonoBehaviour
 {
     public bool LayerEnabled = true;
-    private bool _internallyEnabled;
+    private bool _internallyEnabled = true;
 
     public void Start()
     {

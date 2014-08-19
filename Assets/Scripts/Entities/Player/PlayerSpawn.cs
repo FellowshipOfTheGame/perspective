@@ -16,9 +16,7 @@ public class PlayerSpawn : MonoBehaviour
         foreach (GameObject playerInstance in playerInstances)
         {
             if (playerInstance.GetComponent<PlayerDeath>().IsAlive)
-            {
                 return;
-            }
         }
 
         GameObject player = (GameObject)Instantiate(PlayerPrefab, transform.position, Quaternion.identity);
@@ -26,6 +24,9 @@ public class PlayerSpawn : MonoBehaviour
 
         foreach (GameObject chunk in ReactiveChunks)
             foreach (Transform child in chunk.transform)
+            {
                 child.gameObject.SetActive(true);
+                child.gameObject.GetComponent<ExplosionEventHandler>().Enabled = true;
+            }
     }
 }

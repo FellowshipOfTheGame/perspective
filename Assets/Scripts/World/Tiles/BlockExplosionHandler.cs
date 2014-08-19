@@ -3,13 +3,6 @@ using System.Collections;
 
 public class BlockExplosionHandler : ExplosionEventHandler
 {
-    public void Update()
-    {
-        if (gameObject.activeSelf && !Enabled)
-        {
-            Enabled = true;
-        }
-    }
 
     public override void OnExplosion(float radius, Vector3 position)
     {
