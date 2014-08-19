@@ -3,56 +3,50 @@ using UnityEngine;
 
 public class Layer : MonoBehaviour
 {
-    public bool LayerEnabled = true;
-    private bool _internallyEnabled = true;
+    [SerializeField]
+    private bool _layerEnabled = true;
+
+    public bool LayerEnabled
+    {
+        get { return _layerEnabled; }
+        set
+        {
+            _layerEnabled = value;
+            ToggleFullLayer();
+        }
+    }
 
     public void Start()
     {
-        foreach (LayerEventHandler eventHandler in GetComponentsInChildren<LayerEventHandler>())
+        foreach (PerspectiveResponse eventHandler in GetComponentsInChildren<PerspectiveResponse>())
         {
-            OnLayerDisabled += eventHandler.OnLayerDisabled;
-            OnLayerEnabled += eventHandler.OnLayerEnabled;
+            OnFullLayerDisabled += eventHandler.OnPerspectiveDisabled;
+            OnFullLayerEnabled += eventHandler.OnPerspectiveEnabled;
         }
 
-        DoToggle();
+        ToggleFullLayer();
     }
 
-    public void Update()
-    {
-        if (LayerEnabled != _internallyEnabled)
-        {
-            DoToggle();
-        }
-    }
-    public void RemoveEvents(GameObject obj)
-    {
-        foreach (LayerEventHandler eventHandler in obj.GetComponents<LayerEventHandler>())
-        {
-            OnLayerDisabled -= eventHandler.OnLayerDisabled;
-            OnLayerEnabled -= eventHandler.OnLayerEnabled;
-        }
-    }
-
-    private void DoToggle()
+    private void ToggleFullLayer()
     {
         if (LayerEnabled)
         {
-            if (OnLayerEnabled != null)
+            if (OnFullLayerEnabled != null)
             {
-                OnLayerEnabled();
+                OnFullLayerEnabled();
             }
         }
         else
         {
-            if (OnLayerDisabled != null)
+            if (OnFullLayerDisabled != null)
             {
-                OnLayerDisabled();
+                OnFullLayerDisabled();
             }
         }
 
-        _internallyEnabled = LayerEnabled;
+        _layerEnabled = LayerEnabled;
     }
 
-    public event Action OnLayerEnabled;
-    public event Action OnLayerDisabled;
+    public event Action OnFullLayerEnabled;
+    public event Action OnFullLayerDisabled;
 }

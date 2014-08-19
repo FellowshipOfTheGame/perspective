@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class LayerController : MonoBehaviour
+public class PerspectiveController : MonoBehaviour
 {
     public Layer TestLayer;
 

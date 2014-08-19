@@ -41,11 +41,11 @@ public class TNT : ExplosionEventHandler
         }
     }
 
-    public override void OnLayerEnabled()
+    public override void OnPerspectiveEnabled()
     {
         Enabled = true;
     }
-    public override void OnLayerDisabled()
+    public override void OnPerspectiveDisabled()
     {
         Enabled = false;
     }
