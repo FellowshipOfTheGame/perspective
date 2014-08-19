@@ -79,7 +79,7 @@ public class CharacterMotor : MonoBehaviour
         euler.y = Mathf.Clamp(euler.y, 0f, 180f);
         transform.rotation = Quaternion.Euler(euler);
 
-        _animator.SetFloat("speed", Mathf.Abs(velocity.x));
+        _animator.SetFloat("speed", Mathf.Abs(velocity.x * horizontalInput));
         _animator.SetBool("grounded", _isGrounded);
     }
 
