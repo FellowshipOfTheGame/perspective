@@ -3,50 +3,43 @@ using UnityEngine;
 
 public class Layer : MonoBehaviour
 {
-    [SerializeField]
-    private bool _layerEnabled = true;
-
-    public bool LayerEnabled
-    {
-        get { return _layerEnabled; }
-        set
-        {
-            _layerEnabled = value;
-            ToggleFullLayer();
-        }
-    }
-
     public void Start()
     {
-        foreach (PerspectiveResponse eventHandler in GetComponentsInChildren<PerspectiveResponse>())
+        foreach (PerspectiveResponse responses in GetComponentsInChildren<PerspectiveResponse>())
         {
-            OnFullLayerDisabled += eventHandler.OnPerspectiveDisabled;
-            OnFullLayerEnabled += eventHandler.OnPerspectiveEnabled;
+            _deactivateAllEvent += responses.DeactivatePerspective;
+            _activateAllEvent += responses.ActivatePerspective;
         }
-
-        ToggleFullLayer();
     }
 
-    private void ToggleFullLayer()
+    public void ActivateAll()
     {
-        if (LayerEnabled)
+        if (_activateAllEvent != null)
         {
-            if (OnFullLayerEnabled != null)
-            {
-                OnFullLayerEnabled();
-            }
+            _activateAllEvent();
+        }
+    }
+
+    public void DeactivateAll()
+    {
+        if (_deactivateAllEvent != null)
+        {
+            _deactivateAllEvent();
+        }
+    }
+
+    public void SetAllActive(bool active)
+    {
+        if (active)
+        {
+            _activateAllEvent();
         }
         else
         {
-            if (OnFullLayerDisabled != null)
-            {
-                OnFullLayerDisabled();
-            }
+            _deactivateAllEvent();
         }
-
-        _layerEnabled = LayerEnabled;
     }
 
-    public event Action OnFullLayerEnabled;
-    public event Action OnFullLayerDisabled;
+    private event Action _activateAllEvent;
+    private event Action _deactivateAllEvent;
 }

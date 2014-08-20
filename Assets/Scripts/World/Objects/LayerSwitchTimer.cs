@@ -9,29 +9,29 @@ public class LayerSwitchTimer : MonoBehaviour
     private int index;
 
 	// Use this for initialization
-	void Start ()
-    {
-        lastTimeChange = Time.realtimeSinceStartup;
-        foreach (Layer layer in layers)
-            layer.LayerEnabled = false;
-        index = 0;
-        if (layers.Length != 0)
-            layers[index].LayerEnabled = true;
-	}
+    //void Start ()
+    //{
+    //    lastTimeChange = Time.realtimeSinceStartup;
+    //    foreach (Layer layer in layers)
+    //        layer.LayerEnabled = false;
+    //    index = 0;
+    //    if (layers.Length != 0)
+    //        layers[index].LayerEnabled = true;
+    //}
 	
-	// Update is called once per frame
-	void Update ()
-    {
-        if (layers.Length < 2 || (Time.realtimeSinceStartup - lastTimeChange) < timerDelayInSeconds)
-            return;
-        int nextIndex;
+    //// Update is called once per frame
+    //void Update ()
+    //{
+    //    if (layers.Length < 2 || (Time.realtimeSinceStartup - lastTimeChange) < timerDelayInSeconds)
+    //        return;
+    //    int nextIndex;
 
-        nextIndex = (index + 1) % layers.Length;
+    //    nextIndex = (index + 1) % layers.Length;
 
-        layers[index].LayerEnabled = false;
-        layers[nextIndex].LayerEnabled = true;
+    //    layers[index].LayerEnabled = false;
+    //    layers[nextIndex].LayerEnabled = true;
 
-        index = nextIndex;
-        lastTimeChange = Time.realtimeSinceStartup;
-	}
+    //    index = nextIndex;
+    //    lastTimeChange = Time.realtimeSinceStartup;
+    //}
 }

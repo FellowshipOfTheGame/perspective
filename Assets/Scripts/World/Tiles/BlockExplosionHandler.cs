@@ -13,11 +13,11 @@ public class BlockExplosionHandler : ExplosionEventHandler
         }
     }
 
-    public override void OnPerspectiveEnabled()
+    protected override void OnPerspectiveActivated()
     {
         Enabled = true;
     }
-    public override void OnPerspectiveDisabled()
+    protected override void OnPerspectiveDeactivated()
     {
         Enabled = false;
     }

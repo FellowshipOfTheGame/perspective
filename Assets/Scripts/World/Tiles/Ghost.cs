@@ -4,8 +4,7 @@ public class Ghost : PerspectiveResponse
 {
     public float AlphaWhenGhost = 0.5f;
 
-
-    public override void OnPerspectiveEnabled()
+    protected override void OnPerspectiveActivated()
     {
         Color materialColor = gameObject.renderer.material.color;
         materialColor.a = 1.0f;
@@ -18,7 +17,7 @@ public class Ghost : PerspectiveResponse
         }
     }
 
-    public override void OnPerspectiveDisabled()
+    protected override void OnPerspectiveDeactivated()
     {
         Color materialColor = gameObject.renderer.material.color;
         materialColor.a = AlphaWhenGhost;

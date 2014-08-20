@@ -2,8 +2,7 @@
 
 public class PlayerSpawn : MonoBehaviour
 {
-    public GameObject PlayerPrefab;
-    public GameObject[] ReactiveChunks;
+    public GameObject PlayerDefault;
 
     public void Awake()
     {
@@ -19,14 +18,9 @@ public class PlayerSpawn : MonoBehaviour
                 return;
         }
 
-        GameObject player = (GameObject)Instantiate(PlayerPrefab, transform.position, Quaternion.identity);
+        GameObject player = (GameObject)Instantiate(PlayerDefault, transform.position, Quaternion.identity);
+        player.tag = "Player";
+        player.SetActive(true);
         Camera.main.GetComponent<CameraFollow>().Target = player.transform;
-
-        foreach (GameObject chunk in ReactiveChunks)
-            foreach (Transform child in chunk.transform)
-            {
-                child.gameObject.SetActive(true);
-                child.gameObject.GetComponent<ExplosionEventHandler>().Enabled = true;
-            }
     }
 }
