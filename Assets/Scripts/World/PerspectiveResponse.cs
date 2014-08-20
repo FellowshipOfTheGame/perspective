@@ -2,38 +2,29 @@
 
 public abstract class PerspectiveResponse : MonoBehaviour
 {
-    [SerializeField]
-    private bool _perspectiveActive = true;
+    [SerializeField] private bool _perspectiveActive = true;
 
     public bool PerspectiveActive
     {
         get { return _perspectiveActive; }
         set
         {
-            if (value != _perspectiveActive)
+            if (value)
             {
-                if (value)
-                {
-                    OnPerspectiveActivated();
-                }
-                else
-                {
-                    OnPerspectiveDeactivated();
-                }
-
-                _perspectiveActive = value;
+                OnPerspectiveActivated();
             }
+            else
+            {
+                OnPerspectiveDeactivated();
+            }
+
+            _perspectiveActive = value;
         }
     }
 
-    public void ActivatePerspective()
+    public void Start()
     {
-        PerspectiveActive = true;
-    }
-
-    public void DeactivatePerspective()
-    {
-        PerspectiveActive = false;
+        PerspectiveActive = _perspectiveActive;
     }
 
     protected abstract void OnPerspectiveActivated();
