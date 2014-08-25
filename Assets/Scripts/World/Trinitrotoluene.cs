@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -8,6 +9,8 @@ public class Trinitrotoluene : ExplosionResponse
     public float Radius = 2f;
 
     public AudioClipArray ExplosionSounds;
+
+    public GameObject ParticlesPrefab;
 
     private SphereCollider _trigger;
 
@@ -34,6 +37,8 @@ public class Trinitrotoluene : ExplosionResponse
             yield return new WaitForFixedUpdate();
         } while (progress < 1f);
 
+        GameObject particles = (GameObject) GameObject.Instantiate(ParticlesPrefab);
+        particles.transform.position = transform.position;
         ExplosionSounds.PlayRandomAtPoint(transform.position);
 
         _trigger.enabled = false;
