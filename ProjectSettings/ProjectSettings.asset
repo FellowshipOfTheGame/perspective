@@ -10,7 +10,7 @@ PlayerSettings:
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: Fellowship of the Game - USP
+  companyName: Fellowship of the Game
   productName: Perspective
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
