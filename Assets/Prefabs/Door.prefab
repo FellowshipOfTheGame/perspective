@@ -104,7 +104,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 18.2288723, y: .00525009586, z: .494919777}
+  m_LocalPosition: {x: 98.896225, y: -24.9776688, z: .504572988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -264,7 +264,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: .5, y: 1, z: .5}
@@ -280,14 +280,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 096c4c2caf043f74eb8577c3bc01ed67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsOpen: 0
+  NextScene: Level 2
+  FadeOutTime: 1
+  FadeOutColor: {r: 0, g: 0, b: 0, a: 1}
   AudioClip:
     Clips:
     - {fileID: 8300000, guid: 286ddf39da32ddb4281e85969ef2fc5a, type: 3}
     - {fileID: 8300000, guid: c88837fab8eff9d40934dd30c3817b74, type: 3}
-  DoorOpenMaterial: {fileID: 0}
-  NextScene: Level 2
-  FadeOutTime: 1
-  FadeOutColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

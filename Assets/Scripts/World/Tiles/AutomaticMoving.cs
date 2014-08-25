@@ -2,7 +2,6 @@
 using UnityEngine;
 
 [RequireComponent(typeof (Rigidbody))]
-[RequireComponent(typeof (BringRigidbody))]
 public class AutomaticMoving : MonoBehaviour
 {
     public Vector3 Offset = Vector3.right;
@@ -24,7 +23,7 @@ public class AutomaticMoving : MonoBehaviour
         if (!_isWaiting)
         {
             _epsilon += _signal*(Time.fixedDeltaTime/Period);
-            rigidbody.MovePosition(Vector3.Lerp(_startingPosition, _startingPosition + Offset, _epsilon));
+            rigidbody.MovePosition(MathUtility.SmoothStep(_startingPosition, _startingPosition + Offset, _epsilon));
 
             if (_epsilon >= 1f || _epsilon <= 0f)
             {

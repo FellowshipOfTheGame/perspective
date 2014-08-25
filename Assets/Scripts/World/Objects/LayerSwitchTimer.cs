@@ -4,7 +4,7 @@ using System.Collections;
 public class LayerSwitchTimer : MonoBehaviour
 {
     public float timerDelayInSeconds = 1.0f;
-    public Layer[] layers;
+    public DualLayer[] DualLayers;
     private float lastTimeChange;
     private int index;
 
@@ -12,24 +12,24 @@ public class LayerSwitchTimer : MonoBehaviour
     //void Start ()
     //{
     //    lastTimeChange = Time.realtimeSinceStartup;
-    //    foreach (Layer layer in layers)
+    //    foreach (DualLayer layer in DualLayers)
     //        layer.LayerEnabled = false;
     //    index = 0;
-    //    if (layers.Length != 0)
-    //        layers[index].LayerEnabled = true;
+    //    if (DualLayers.Length != 0)
+    //        DualLayers[index].LayerEnabled = true;
     //}
 	
     //// Update is called once per frame
     //void Update ()
     //{
-    //    if (layers.Length < 2 || (Time.realtimeSinceStartup - lastTimeChange) < timerDelayInSeconds)
+    //    if (DualLayers.Length < 2 || (Time.realtimeSinceStartup - lastTimeChange) < timerDelayInSeconds)
     //        return;
     //    int nextIndex;
 
-    //    nextIndex = (index + 1) % layers.Length;
+    //    nextIndex = (index + 1) % DualLayers.Length;
 
-    //    layers[index].LayerEnabled = false;
-    //    layers[nextIndex].LayerEnabled = true;
+    //    DualLayers[index].LayerEnabled = false;
+    //    DualLayers[nextIndex].LayerEnabled = true;
 
     //    index = nextIndex;
     //    lastTimeChange = Time.realtimeSinceStartup;

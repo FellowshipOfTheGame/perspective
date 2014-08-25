@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-public class Ghost : PerspectiveResponse
+public class Ghost : Dual
 {
     public float AlphaWhenGhost = 0.5f;
 
-    protected override void OnPerspectiveActivated()
+    protected override void BecomeReal()
     {
         Color materialColor = gameObject.renderer.material.color;
         materialColor.a = 1.0f;
@@ -17,7 +17,7 @@ public class Ghost : PerspectiveResponse
         }
     }
 
-    protected override void OnPerspectiveDeactivated()
+    protected override void BecomeImaginary()
     {
         Color materialColor = gameObject.renderer.material.color;
         materialColor.a = AlphaWhenGhost;

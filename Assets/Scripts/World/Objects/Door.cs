@@ -2,13 +2,13 @@
 using System.Collections;
 
 public class Door : KeyEventHandler {
-    public AudioClipArray AudioClip;
-    public Material DoorOpenMaterial;
-    private bool IsDoorOpen = false;
+    public bool IsOpen;
+    
     public string NextScene;
     public float FadeOutTime = 1f;
     public Color FadeOutColor = Color.black;
-    private bool _isEnding = false;
+    public AudioClipArray AudioClip;
+    private bool _isEnding;
 
     public override void OnKeyAcquired()
     {
@@ -21,15 +21,14 @@ public class Door : KeyEventHandler {
             }
             else if(child.name == "Door")
             {
-                child.renderer.sharedMaterial = DoorOpenMaterial;
-                IsDoorOpen = true;
+                IsOpen = true;
             }
         }
     }
 
-    public void OnTriggerEnter(Collider collider)
+    public void OnTriggerEnter(Collider other)
     {
-        if (collider.gameObject.CompareTag("Player") && IsDoorOpen)
+        if (other.gameObject.CompareTag("Player") && IsOpen)
         {
             _isEnding = true;
             StartCoroutine(FadeScene());
@@ -37,9 +36,9 @@ public class Door : KeyEventHandler {
 
     }
 
-    public void OnTriggerExit(Collider collider)
+    public void OnTriggerExit(Collider other)
     {
-        if (collider.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             _isEnding = false;
         }
