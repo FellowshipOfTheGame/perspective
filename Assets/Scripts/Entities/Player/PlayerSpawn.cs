@@ -4,6 +4,8 @@ public class PlayerSpawn : MonoBehaviour
 {
     public GameObject PlayerDefault;
 
+    public HardFollow PlayerLight;
+
     public void Awake()
     {
         Spawn();
@@ -25,10 +27,11 @@ public class PlayerSpawn : MonoBehaviour
             }
         }
 
-        GameObject player = (GameObject)Instantiate(PlayerDefault, transform.position, Quaternion.identity);
+        GameObject player = (GameObject) Instantiate(PlayerDefault, transform.position, Quaternion.identity);
         player.tag = "Player";
         player.SetActive(true);
         player.GetComponent<LayerControl>().LayerID = layerID;
-        Camera.main.GetComponent<SmoothFollow>().Target = player.transform;
+        Camera.main.GetComponent<CameraFollow>().Target = player.transform;
+        PlayerLight.Target = player.transform;
     }
 }
