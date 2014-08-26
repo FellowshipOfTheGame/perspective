@@ -19,13 +19,17 @@ public class LayerControl : MonoBehaviour
         _trigger.isTrigger = true;
         _trigger.radius = 0f;
         _trigger.enabled = false;
+        Camera.main.backgroundColor = Map.Instance.DualLayers[LayerID].Sky;
     }
 
     public void Update()
     {
         if (Input.GetButtonDown("Next") && !_isTransitioning)
         {
-            StartCoroutine(Transition((LayerID + 1)%Map.Instance.DualLayers.Length));
+            int nextLayerID = (LayerID + 1)%Map.Instance.DualLayers.Length;
+
+            StartCoroutine(Transition(LayerID, nextLayerID));
+            LayerID = nextLayerID;
         }
 
         if (Input.GetButtonDown("Previous") && !_isTransitioning)
@@ -36,15 +40,15 @@ public class LayerControl : MonoBehaviour
                 nextLayerID += Map.Instance.DualLayers.Length;
             }
 
-            StartCoroutine(Transition(nextLayerID));
+            StartCoroutine(Transition(LayerID, nextLayerID));
+            LayerID = nextLayerID;
         }
     }
 
-    public IEnumerator Transition(int nextLayerID)
+    public IEnumerator Transition(int previousLayer, int nextLayerID)
     {
         _isTransitioning = true;
-
-        foreach (Dual dual in Map.Instance.DualLayers[LayerID].Duals)
+        foreach (Dual dual in Map.Instance.DualLayers[previousLayer].Duals)
         {
             dual.Trigger.enabled = true;
         }
@@ -60,6 +64,13 @@ public class LayerControl : MonoBehaviour
         do
         {
             progress += Time.deltaTime;
+
+            Camera.main.backgroundColor = 
+                Color.Lerp(
+                Map.Instance.DualLayers[previousLayer].Sky, 
+                Map.Instance.DualLayers[nextLayerID].Sky, 
+                progress);
+
             _trigger.radius = Mathf.Lerp(0f, TransitionRadius, progress);
             rigidbody.MovePosition(rigidbody.position + Vector3.up*1e-2f);
             yield return new WaitForFixedUpdate();
@@ -67,7 +78,7 @@ public class LayerControl : MonoBehaviour
         } while (progress < 1f);
         _trigger.enabled = false;
 
-        foreach (Dual dual in Map.Instance.DualLayers[LayerID].Duals)
+        foreach (Dual dual in Map.Instance.DualLayers[previousLayer].Duals)
         {
             dual.IsReal = false;
             dual.Trigger.enabled = false;
@@ -80,8 +91,6 @@ public class LayerControl : MonoBehaviour
         }
 
         _isTransitioning = false;
-
-        LayerID = nextLayerID;
     }
 
     public void OnTriggerEnter(Collider other)

@@ -1,8 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Ghost : Dual
 {
     public float AlphaWhenGhost = 0.5f;
+
+    private const float TransitionTime = 1f;
 
     protected override void BecomeReal()
     {
@@ -13,7 +16,7 @@ public class Ghost : Dual
         Collider collider = gameObject.collider;
         if (collider != null)
         {
-            gameObject.collider.enabled = true;
+            collider.enabled = true;
         }
     }
 
@@ -26,7 +29,7 @@ public class Ghost : Dual
         Collider collider = gameObject.collider;
         if (collider != null)
         {
-            gameObject.collider.enabled = false;
+            collider.enabled = false;
         }
     }
 }
