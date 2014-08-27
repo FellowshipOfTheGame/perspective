@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class DualLayerClock : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class DualLayerClock : MonoBehaviour
     {
         if (Time.time - _lastChangeTime >= Period)
         {
-            TransitionSound.PlayRandomAtPoint(GameObject.FindGameObjectWithTag("Player").transform.position);
+            TransitionSound.PlayNextAtPoint(GameObject.FindGameObjectWithTag("Player").transform.position);
             _lastChangeTime = Time.time;
             int nextLayerID = (_layerID + 1)%Map.Instance.DualLayers.Length;
             foreach (Dual dual in Map.Instance.DualLayers[nextLayerID].Duals)
@@ -29,6 +30,8 @@ public class DualLayerClock : MonoBehaviour
             {
                 dual.IsReal = false;
             }
+
+            Camera.main.backgroundColor = Map.Instance.DualLayers[nextLayerID].Sky;
 
             _layerID = nextLayerID;
         }

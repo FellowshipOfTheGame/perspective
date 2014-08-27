@@ -48,7 +48,7 @@ public class LayerControl : MonoBehaviour
 
     public IEnumerator Transition(int previousLayer, int nextLayerID)
     {
-        TransitionSound.PlayRandomAtPoint(transform.position);
+        TransitionSound.PlayNextAtPoint(transform.position);
         _isTransitioning = true;
         foreach (Dual dual in Map.Instance.DualLayers[previousLayer].Duals)
         {
