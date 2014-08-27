@@ -13891,7 +13891,7 @@ MonoBehaviour:
   Distance: {x: 0, y: 0}
   Margin: {x: 1, y: .5}
   Minimum: {x: -100, y: -14.5}
-  Maximum: {x: 40, y: 100}
+  Maximum: {x: 38, y: 100}
   SmoothTime: 10
 --- !u!1001 &377136572
 Prefab:
@@ -49890,7 +49890,8 @@ MonoBehaviour:
   NextScene: Level 3_build
   SuccessSound:
     Clips:
-    - {fileID: 8300000, guid: fbe6e0234f6e1864f80ca65fe77608ea, type: 3}
+    - {fileID: 8300000, guid: 286ddf39da32ddb4281e85969ef2fc5a, type: 3}
+    - {fileID: 8300000, guid: c88837fab8eff9d40934dd30c3817b74, type: 3}
 --- !u!65 &1490637647
 BoxCollider:
   m_ObjectHideFlags: 0

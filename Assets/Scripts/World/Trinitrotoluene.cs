@@ -46,7 +46,7 @@ public class Trinitrotoluene : ExplosionResponse
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Explosion"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Explosion") & other.isTrigger)
         {
             ExplosionResponse response = GetComponent<ExplosionResponse>();
             if (response != null && !response.HasExploded)

@@ -17,4 +17,12 @@ public class DestroyOnExplosion : ExplosionResponse
         Destroy(gameObject);
         yield break;
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.GetMask("Explosion") && other.isTrigger)
+        {
+            StartCoroutine(Explode());
+        }
+    }
 }

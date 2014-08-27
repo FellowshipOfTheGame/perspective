@@ -641,7 +641,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Period: 2
-  Clips: []
+  Clips:
+  - {fileID: 2138237118}
   BrightnessCutoff: .600000024
   InitialShininess: .400000006
 --- !u!1 &846562739
@@ -1515,7 +1516,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: .5
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Priority: 128
   DopplerLevel: 1

@@ -284,7 +284,8 @@ MonoBehaviour:
   NextScene: Menu
   SuccessSound:
     Clips:
-    - {fileID: 8300000, guid: fbe6e0234f6e1864f80ca65fe77608ea, type: 3}
+    - {fileID: 8300000, guid: 286ddf39da32ddb4281e85969ef2fc5a, type: 3}
+    - {fileID: 8300000, guid: c88837fab8eff9d40934dd30c3817b74, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
