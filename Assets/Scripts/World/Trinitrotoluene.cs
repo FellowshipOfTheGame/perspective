@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof (Rigidbody))]
 public class Trinitrotoluene : ExplosionResponse
 {
     public float Delay = 1f;
@@ -19,7 +19,6 @@ public class Trinitrotoluene : ExplosionResponse
         _trigger.isTrigger = true;
         _trigger.radius = 0f;
         _trigger.enabled = false;
-        rigidbody.WakeUp();
     }
 
     public override IEnumerator Explode()
@@ -32,12 +31,13 @@ public class Trinitrotoluene : ExplosionResponse
             progress += Time.deltaTime;
             _trigger.radius = Mathf.Lerp(0f, Radius, progress);
             transform.localScale = MathUtility.SmoothStep(Vector3.one, Vector3.one*1.5f, 2*progress);
-            rigidbody.MovePosition(rigidbody.position + Vector3.forward * 1e-5f);
+            rigidbody.MovePosition(rigidbody.position + Vector3.forward*1e-5f);
             yield return new WaitForFixedUpdate();
         } while (progress < 1f);
 
-        GameObject particles = (GameObject) GameObject.Instantiate(ParticlesPrefab);
+        GameObject particles = (GameObject) Instantiate(ParticlesPrefab);
         particles.transform.position = transform.position;
+        particles.transform.localScale *= Radius;
         ExplosionSounds.PlayRandomAtPoint(transform.position);
 
         _trigger.enabled = false;

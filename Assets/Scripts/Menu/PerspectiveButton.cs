@@ -1,11 +1,20 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class PerspectiveButton : MonoBehaviour {
-    public string Link = "http://www.fog.icmc.usp.br/";
-	
-    public void OnMouseDown()
+    public string NextLevel;
+
+    public void Awake()
     {
-        Application.OpenURL(Link);
+        GameObject.Find("Background music").GetComponent<AudioSource>().enabled = false;
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+            GameObject.Find("Background music").GetComponent<AudioSource>().enabled = true;
+            Application.LoadLevel(NextLevel);
+        }
     }
 }

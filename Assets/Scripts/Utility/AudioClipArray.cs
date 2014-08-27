@@ -19,8 +19,11 @@ public class AudioClipArray
 
     private void Play(int index, Vector3 position)
     {
-        AudioSource.PlayClipAtPoint(Clips[index], position);
-        lastPlayedIndex = index;
+        if (Clips[index] != null)
+        {
+            AudioSource.PlayClipAtPoint(Clips[index], position);
+            lastPlayedIndex = index;
+        }
     }
 
 

@@ -39,5 +39,11 @@ public abstract class SingletonBehaviour<T> : MonoBehaviour where T : MonoBehavi
         }
     }
 
+    public void OnDestroy()
+    {
+        _instance = null;
+        _instantiated = false;
+    }
+
     protected SingletonBehaviour(){}
 }

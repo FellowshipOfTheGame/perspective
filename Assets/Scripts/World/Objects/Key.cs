@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
-using System.Collections;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Key : MonoBehaviour
 {
     public KeyEventHandler KeyTrigger;
 
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider other)
     {
-        if (collider.gameObject.CompareTag("Player"))
+        if (!other.isTrigger && other.gameObject.CompareTag("Player"))
         {
             KeyTrigger.OnKeyAcquired();
             DestroyObject(gameObject);

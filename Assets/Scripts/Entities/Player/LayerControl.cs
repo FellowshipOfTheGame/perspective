@@ -1,17 +1,18 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof (Rigidbody))]
 public class LayerControl : MonoBehaviour
 {
     private bool _isTransitioning;
 
-    [SerializeField]
-    public int LayerID;
+    [SerializeField] public int LayerID;
 
     private SphereCollider _trigger;
     public float TransitionRadius = 25f;
     public float TransitionTime = 1f;
+
+    public AudioClipArray TransitionSound;
 
     public void Start()
     {
@@ -47,6 +48,7 @@ public class LayerControl : MonoBehaviour
 
     public IEnumerator Transition(int previousLayer, int nextLayerID)
     {
+        TransitionSound.PlayRandomAtPoint(transform.position);
         _isTransitioning = true;
         foreach (Dual dual in Map.Instance.DualLayers[previousLayer].Duals)
         {
@@ -65,16 +67,15 @@ public class LayerControl : MonoBehaviour
         {
             progress += Time.deltaTime;
 
-            Camera.main.backgroundColor = 
+            Camera.main.backgroundColor =
                 Color.Lerp(
-                Map.Instance.DualLayers[previousLayer].Sky, 
-                Map.Instance.DualLayers[nextLayerID].Sky, 
-                progress);
+                    Map.Instance.DualLayers[previousLayer].Sky,
+                    Map.Instance.DualLayers[nextLayerID].Sky,
+                    progress);
 
             _trigger.radius = Mathf.Lerp(0f, TransitionRadius, progress);
             rigidbody.MovePosition(rigidbody.position + Vector3.up*1e-2f);
             yield return new WaitForFixedUpdate();
-
         } while (progress < 1f);
         _trigger.enabled = false;
 
@@ -86,7 +87,7 @@ public class LayerControl : MonoBehaviour
 
         foreach (Dual dual in Map.Instance.DualLayers[nextLayerID].Duals)
         {
-            dual.IsReal = true; 
+            dual.IsReal = true;
             dual.Trigger.enabled = false;
         }
 

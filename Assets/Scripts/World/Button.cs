@@ -28,7 +28,6 @@ public class Button : MonoBehaviour
                 response.OnButtonUp(collision.gameObject);
             }
         }
-
         gameObject.renderer.material.color = new Color(.5f, 0f, 0f);
     }
 }

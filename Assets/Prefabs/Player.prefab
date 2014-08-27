@@ -118,6 +118,9 @@ MonoBehaviour:
   LayerID: 0
   TransitionRadius: 25
   TransitionTime: 1
+  TransitionSound:
+    Clips:
+    - {fileID: 8300000, guid: f1ee9489ceaaff049a37ecbec35bea9c, type: 3}
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1

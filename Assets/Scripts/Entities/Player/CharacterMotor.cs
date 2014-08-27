@@ -30,10 +30,17 @@ public class CharacterMotor : MonoBehaviour
 
     public void FixedUpdate()
     {
+        RaycastHit hit;
         _isGrounded = Physics.Raycast(
-            origin: transform.position + _colliderCenter,
-            direction: Vector3.down,
-            distance: collider.bounds.extents.y);
+            transform.position + _colliderCenter,
+            Vector3.down,
+            out hit,
+            collider.bounds.extents.y);
+
+        if (_isGrounded)
+        {
+            _isGrounded &= !hit.collider.isTrigger;
+        }
 
         float acceleration = _isGrounded ? AccelerationOnGround : AccelerationOnAir;
 
