@@ -4,6 +4,12 @@ using System.Collections;
 public class ShadowRotation : MonoBehaviour
 {
     public float Sensibility = 5.0f;
+    private Vector3 OriginalVector;
+
+    void Start()
+    {
+        OriginalVector = transform.rotation.eulerAngles;
+    }
 
 	void Update ()
     {
@@ -11,8 +17,8 @@ public class ShadowRotation : MonoBehaviour
         float differenceY = 1 - 2 * Input.mousePosition.y / Screen.height;
 
         transform.rotation = Quaternion.Euler(new Vector3(
-            x: differenceY * Sensibility,
-            y: 180 + differenceX * Sensibility,
-            z: 0));
+            x: OriginalVector.x + differenceY * Sensibility,
+            y: OriginalVector.y + differenceX * Sensibility,
+            z: OriginalVector.z));
 	}
 }
