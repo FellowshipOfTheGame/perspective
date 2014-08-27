@@ -61968,7 +61968,8 @@ MonoBehaviour:
   TransitionTime: 1
   TransitionSound:
     Clips:
-    - {fileID: 8300000, guid: f1ee9489ceaaff049a37ecbec35bea9c, type: 3}
+    - {fileID: 8300000, guid: 12d0c8879b96b5b48ac8e4dd2de660da, type: 3}
+    - {fileID: 8300000, guid: 03fec08b6a3cdef43ac6d6dd72cd1a81, type: 3}
 --- !u!212 &2087596832
 SpriteRenderer:
   m_ObjectHideFlags: 0
